@@ -13,14 +13,15 @@
   <meta property="og:description" content="Learn how to trust, manage, and move on your lifeline with real arborist techniques.">
   <meta property="og:image" content="https://chainsawclay.com/climbing-class/public/app/img/gear-climber.jpg">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chainsawclay.com/climbing-class/public/app/pages/lifeline/index.html">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Lifeline Course — Chainsaw’s Climbing Class">
   <meta name="twitter:description" content="Deep breakdowns on lifeline safety, positioning, and canopy flow.">
   <meta name="twitter:image" content="https://chainsawclay.com/climbing-class/public/app/img/gear-climber.jpg">
 
-  <!-- MAIN CSS FOR THIS COURSE -->
-  <link rel="stylesheet" href="./lifeline.css" />
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" href="/climbing-class/public/app/pages/lifeline/lifeline.css" />
 </head>
 
 <body>
@@ -93,7 +94,7 @@
       </div>
     </section>
 
-    <!-- QUIZ / INTERACTIVE SECTION PLACEHOLDER -->
+    <!-- QUIZ -->
     <section class="course-section">
       <h2>Interactive Lifeline Quiz</h2>
       <p>
@@ -115,24 +116,11 @@
 
   </div>
 
-  <!-- OPTIONAL: GLOBAL PAYWALL / ACCESS LOGIC -->
+  <!-- PAYWALL -->
   <script src="/js/paywall.js"></script>
 
-  <!-- OPTIONAL: AUTO‑PLAY SEQUENCE FOR SPLIT VIDEOS -->
-  <script>
-    const lifelineVideos = [
-      document.getElementById("lifelineVideo1"),
-      document.getElementById("lifelineVideo2"),
-      document.getElementById("lifelineVideo3")
-    ];
-
-    for (let i = 0; i < lifelineVideos.length - 1; i++) {
-      lifelineVideos[i].addEventListener("ended", () => {
-        lifelineVideos[i + 1].scrollIntoView({ behavior: "smooth" });
-        lifelineVideos[i + 1].play();
-      });
-    }
-  </script>
+  <!-- EXTERNAL JS -->
+  <script src="/climbing-class/public/app/pages/lifeline/lifeline.js"></script>
 
 </body>
 </html>
