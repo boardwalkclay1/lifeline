@@ -21,7 +21,7 @@
   <meta name="twitter:image" content="https://chainsawclay.com/climbing-class/public/app/img/gear-climber.jpg">
 
   <!-- EXTERNAL CSS -->
-  <link rel="stylesheet" href="/climbing-class/public/app/pages/lifeline/lifeline.css" />
+  <link rel="stylesheet" href="./lifeline.css" />
 </head>
 
 <body>
@@ -49,12 +49,8 @@
     <section class="course-intro">
       <h2>What You’ll Learn</h2>
       <p>
-        This Lifeline Course walks you through how to clip in, trust your system, move with confidence, and stay
-        safe while you climb. You’ll see real‑world breakdowns, canopy footage, and step‑by‑step explanations
-        designed for both new climbers and working arborists.
-      </p>
-      <p>
-        Every lesson is short, focused, and built to be watched again — even when you’re already in the tree.
+        This Lifeline Course teaches you how to clip in, trust your system, move with confidence, and stay safe
+        while you climb. Real breakdowns, real canopy footage, real arborist techniques.
       </p>
     </section>
 
@@ -62,55 +58,34 @@
     <section class="course-section">
       <h2>Video Lessons</h2>
 
-      <div class="lesson-grid">
+      <div id="lockedMessage" class="locked-message" style="display:none;">
+        <p>You must unlock this course to watch the videos.</p>
+        <a href="/climbing-class/public/app/pages/access.html" class="btn primary">Unlock Course</a>
+      </div>
+
+      <div id="lessonGrid" class="lesson-grid" style="display:none;">
 
         <!-- LESSON 1 -->
         <article class="lesson-card">
-          <h3>Lesson 1 — Understanding Your Lifeline</h3>
-          <p>
-            Learn what your lifeline actually does, how it’s built, and why every connection point matters.
-          </p>
-          <video id="lifelineVideo1" controls src="https://github.com/boardwalkclay1/lifeline/releases/download/lifeline/TRIAL____________lifeline-intro-1.mp4"></video>
+          <h3>Lesson 1 — Lifeline Intro</h3>
+          <p>Learn what your lifeline does, how it works, and why every connection matters.</p>
+          <video id="lifelineVideo1" controls src="https://github.com/boardwalkclay1/lifeline/releases/download/lifeline/lifeline-intro.mp4"></video>
         </article>
 
         <!-- LESSON 2 -->
         <article class="lesson-card">
-          <h3>Lesson 2 — Clipping In & Trusting the System</h3>
-          <p>
-            Step‑by‑step clipping in, checking your system, and building trust before you ever leave the ground.
-          </p>
-          <video id="lifelineVideo2" controls src="https://github.com/boardwalkclay1/lifeline/releases/download/lifeline/TRIAL____________lifeline-intro-2.mp4"></video>
-        </article>
-
-        <!-- LESSON 3 -->
-        <article class="lesson-card">
-          <h3>Lesson 3 — Basic Movement on Lifeline</h3>
-          <p>
-            Learn how to move, sit, and reposition on your rope without fighting your system or losing control.
-          </p>
-          <video id="lifelineVideo3" controls src="https://github.com/boardwalkclay1/lifeline/releases/download/lifeline/TRIAL____________lifeline-movement.mp4"></video>
+          <h3>Lesson 2 — Bowline Breakdown</h3>
+          <p>The bowline is your foundation knot. Learn how to tie it clean, fast, and safely.</p>
+          <video id="lifelineVideo2" controls src="https://github.com/boardwalkclay1/lifeline/releases/download/lifeline/bowline.mp4"></video>
         </article>
 
       </div>
     </section>
 
-    <!-- QUIZ -->
-    <section class="course-section">
-      <h2>Interactive Lifeline Quiz</h2>
-      <p>
-        After you watch the lessons, you’ll be able to take an interactive quiz that tests your understanding of
-        lifeline safety, clipping in, and movement. Real‑time questions, real scenarios, and instant feedback.
-      </p>
-      <a href="/climbing-class/public/app/pages/lifeline-quiz.html" class="btn primary">Open Lifeline Quiz</a>
-    </section>
-
     <!-- FOOTER -->
     <footer class="course-footer">
       <p>Chainsaw’s Climbing Class • Lifeline Course</p>
-      <p>
-        Email: <a href="mailto:support@chainsawclay.com">support@chainsawclay.com</a> •
-        Phone: <a href="tel:6786830570">678‑683‑0570</a>
-      </p>
+      <p>Email: <a href="mailto:support@chainsawclay.com">support@chainsawclay.com</a> • Phone: <a href="tel:6786830570">678‑683‑0570</a></p>
       <p><a href="/climbing-class/public/">← Back to Climbing Class Home</a></p>
     </footer>
 
@@ -120,7 +95,7 @@
   <script src="/js/paywall.js"></script>
 
   <!-- EXTERNAL JS -->
-  <script src="/climbing-class/public/app/pages/lifeline/lifeline.js"></script>
+  <script src="./lifeline.js"></script>
 
 </body>
 </html>
